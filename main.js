@@ -2,7 +2,7 @@ $(function(){
 
 	// Declaring variables
 	var paint = false; // painting/erasing
-	var paint_erase = "paint"; // paint mode / erase mode
+	var paint_erase = "paint"; // paint mode/erase mode
 	// canvas and context
 	var canvas = document.getElementById('board');
 	var ctx = canvas.getContext('2d');
@@ -12,7 +12,6 @@ $(function(){
 	ctx.strokeStyle = "#000";
 	ctx.fillStyle = "#FFF";
 	roundRect(ctx, 0, 0, 800, 600, 18, true);
-	// roundRect(ctx, 100, 5, 100, 100, 20, true);
 
 	function roundRect(ctx, x, y, width, height, radius, fill, stroke){
 	  if(typeof stroke == 'undefined') {
@@ -76,8 +75,6 @@ $(function(){
 	container.mousedown(function(event){
 		// Paint mode on
 		paint = true;
-		// To check the current mode
-		// window.alert(paint);
 
 		// To draw, hold the mouse key and drag
 		ctx.beginPath();
@@ -174,27 +171,3 @@ $(function(){
 
 });
 
-// var canvas = document.getElementById('board');
-// 	// returns the drawing object of canvas
-// 	var context = canvas.getContext('2d'); 
-
-// 	// Drawing a Line 
-// 	// Declare new path
-// 	context.beginPath();
-
-// 	context.lineWidth = 20;
-// 	context.strokeStyle = "red";
-
-// 	// Styling edges
-// 	context.lineCap = "round"; // butt, square
-// 	context.lineJoin = "round"; // bevel, miter
-
-// 	// Starting point
-// 	context.moveTo(50,50);
-
-// 	// Straight line from starting point to new position
-// 	context.lineTo(200,200)
-// 	context.lineTo(400,100)
-
-// 	// To make line visible
-// 	context.stroke();
