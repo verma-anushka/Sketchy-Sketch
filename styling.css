@@ -50,8 +50,8 @@ header{
 }
 
 #container{
-	margin-top: -1%;
-	margin-left: 45%;
+	/* margin-top: 50%; */
+	/* margin-left: 45%; */
 	width: 800px;
 	height: 600px;
 	margin: 10px auto;
@@ -81,6 +81,7 @@ header{
 }
 
 #board{
+	margin-top: 3%;
 	cursor: crosshair;
 }
 
